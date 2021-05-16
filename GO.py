@@ -163,17 +163,9 @@ def task_B(colour, DF):
 if __name__ == "__main__":
 
     sample1_final, sample2_final = read_data()
-
+    colours = ["white", "blue", "red", "green"]
     # %%
-    task_A("white", sample1_final)
-
-    # %%
-    task_A("red", sample1_final)
-
-    # %%
-    task_A("blue", sample1_final)
-
-    # %%
-    task_A("green", sample1_final)
-    # %%
-    task_B("white", sample2_final)
+    for db in [sample1_final, sample2_final]:
+        for colour in colours:
+            task_A(colour, db)
+            task_B(colour, db)
