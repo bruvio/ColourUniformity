@@ -1,0 +1,10 @@
+.git/
+.idea/
+.cache
+env/
+__pycache__
+**/figures/
+.pytest_cache/
+orphan_branch.sh
+pipeline
+workspace.code-workspace
